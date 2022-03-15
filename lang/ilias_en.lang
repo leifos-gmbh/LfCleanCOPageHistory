@@ -1,0 +1,13 @@
+//
+// Copyright (c) 2022 Leifos GmbH, GPLv3
+//
+
+<!-- language file start -->
+copg_cron_days#:#Delete pages older than
+copg_cron_days_info#:#Page history entries older than this period will be deleted.
+copg_cron_keep_entries#:#Keep Minimum
+copg_cron_keep_entries_info#:#This number is the minimum of entries that will be kept, even if they are older than the deletion period.
+copg_days#:#Days
+copg_entries#:#Entries
+cron_job#:#Page Editor History Cleanup
+cron_job_info#:#Removes older entries from the page history.

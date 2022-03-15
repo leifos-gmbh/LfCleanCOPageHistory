@@ -1,0 +1,13 @@
+//
+// Copyright (c) 2022 Leifos GmbH, GPLv3
+//
+
+<!-- language file start -->
+copg_cron_days#:#Einträge älter als x löschen
+copg_cron_days_info#:#Löscht Einträge aus dem Verlauf, die älter als der angegebene Zeitraum sind.
+copg_cron_keep_entries#:#Mindestanzahl Einträge
+copg_cron_keep_entries_info#:#Diese Anzahl an Einträgen wird im Verlauf behalten, auch wenn diese älter als der angegebene Zeitraum sind.
+copg_days#:#Tage
+copg_entries#:#Einträge
+cron_job#:#Seiteneditor Verlaufsbereinigung
+cron_job_info#:#Löscht ältere Einträge aus dem Seiteneditorverlauf.
