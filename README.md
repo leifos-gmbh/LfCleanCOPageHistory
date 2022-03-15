@@ -13,7 +13,7 @@ ILIAS 5.4.x.
 ```
 mkdir -p Customizing/global/plugins/Services/Cron/CronHook
 cd Customizing/global/plugins/Services/Cron/CronHook
-git clone http://git.leifos.de/leifos/LfCleanCOPageHistory.git
+git clone https://github.com/leifos-gmbh/LfCleanCOPageHistory.git
 ```
 
 ## Log
