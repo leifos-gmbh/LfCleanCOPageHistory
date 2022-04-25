@@ -6,7 +6,9 @@ Before you use it in a productive environment, please make some test runs on a t
 
 ## Supported ILIAS Versions
 
-ILIAS 5.4.x.
+ILIAS 5.4.x., 6.x, 7.x
+
+Note: The cron job will be part of ILIAS 8.
 
 ## Install
 
