@@ -28,9 +28,11 @@ class LfPCMediaObjectMods
             $usages = ilObjMediaObject::lookupUsages($mob_id, true);
             $log->debug("...check deletion of mob $mob_id. Usages: ".count($usages));
             if (count($usages) == 0) {
-                $mob = new ilObjMediaObject($mob_id);
-                $log->debug("Deleting Mob ID: " . $mob_id);
-                $mob->delete();
+                if (ilObject::_lookupType($mob_id) == "mob") {
+                    $mob = new ilObjMediaObject($mob_id);
+                    $log->debug("Deleting Mob ID: " . $mob_id);
+                    $mob->delete();
+                }
             }
         }
     }

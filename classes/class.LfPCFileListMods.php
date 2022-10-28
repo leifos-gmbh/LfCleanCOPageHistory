@@ -25,12 +25,14 @@ class LfPCFileListMods
         );
 
         foreach ($file_ids as $file_id) {
-            $file = new ilObjFile($file_id, false);
-            $usages = $file->getUsages();
-            $log->debug("...check deletion of file $file_id. Usages: ".count($usages));
-            if (count($usages) == 0) {
-                $log->debug("Deleting File ID: " . $file_id);
-                $file->delete();
+            if (ilObject::_lookupType($file_id) == "file") {
+                $file = new ilObjFile($file_id, false);
+                $usages = $file->getUsages();
+                $log->debug("...check deletion of file $file_id. Usages: " . count($usages));
+                if (count($usages) == 0) {
+                    $log->debug("Deleting File ID: " . $file_id);
+                    $file->delete();
+                }
             }
         }
     }
